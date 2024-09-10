@@ -1,0 +1,11 @@
+<svg  viewBox="0 0 1700 1700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Ellipse 33" d="M1682.5 850C1682.5 1309.78 1309.78 1682.5 850 1682.5C390.223 1682.5 17.5 1309.78 17.5 850C17.5 390.223 390.223 17.5 850 17.5C1309.78 17.5 1682.5 390.223 1682.5 850Z" stroke="url(#paint0_linear_236_2)" stroke-width="35"/>
+<defs>
+<linearGradient id="paint0_linear_236_2" x1="850" y1="0" x2="850" y2="1700" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00639B"/>
+<stop offset="0.395833" stop-color="#7DD0FF"/>
+<stop offset="0.5625" stop-color="#DB74FF"/>
+<stop offset="0.996341" stop-color="#9800CD"/>
+</linearGradient>
+</defs>
+</svg>

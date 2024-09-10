@@ -1,0 +1,21 @@
+<svg width="356" height="102" viewBox="0 0 356 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="START GAME" filter="url(#filter0_d_369_56)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M320 31H300V32H299V61H300V62H320V61H321V55H315V58H305V48H318V44H305V35H315V38H321V32H320V31ZM57 32H36V33H35V35V48H36V49H52V59H41V55H35V62H36V63H57V62H58V46H57V45H41V36H52V40H58V36V33H57V32ZM230 32H209V33H208V35V62H209V63H230V62H231V48H230V47H218V51H225V59H214V36H225V40H231V36V33H230V32ZM115 33H114V32H95V33H94V35H93V63H99V49H110V63H116V36V35H115V33ZM110 45V36H99V45H110ZM63 32H88V36H78V63H72V36H63V32ZM149 32H174V36H164V63H158V36H149V32ZM258 33H257V32H238V33H237V35H236V63H242V49H253V63H259V36V35H258V33ZM253 45V36H242V45H253ZM266 33H265V35H264V63H270V36H276V63H282V36H288V63H294V35H293V33H292V32H281V33H280V34H278V33H277V32H266V33ZM122 32H143V33H144V45H143V46H142V47H143V48H144V63H138V49H127V63H121V33H122V32ZM138 45V36H127V45H138Z" fill="url(#paint0_linear_369_56)"/>
+</g>
+<defs>
+<filter id="filter0_d_369_56" x="0" y="0" width="356" height="102" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="17.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.882425 0 0 0 0 0.547591 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_369_56"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_369_56" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_369_56" x1="178" y1="31" x2="177.5" y2="274.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DCAFF8"/>
+<stop offset="1" stop-color="#600C95"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,228 @@
+<svg viewBox="0 0 69 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Ship">
+                                <g id="Flame">
+                                    <rect id="Rectangle 596" x="25" y="56" width="1" height="6"
+                                        fill="url(#paint0_linear_193_24)" />
+                                    <rect id="Rectangle 597" x="23" y="57" width="5" height="2"
+                                        fill="url(#paint1_linear_193_24)" />
+                                    <rect id="Rectangle 598" x="26" y="56" width="1" height="1"
+                                        fill="url(#paint2_linear_193_24)" />
+                                    <rect id="Rectangle 599" x="24" y="56" width="1" height="1"
+                                        fill="url(#paint3_linear_193_24)" />
+                                    <rect id="Rectangle 600" x="24" y="59" width="1" height="2"
+                                        fill="url(#paint4_linear_193_24)" />
+                                    <rect id="Rectangle 601" x="26" y="59" width="1" height="2"
+                                        fill="url(#paint5_linear_193_24)" />
+                                    <rect id="Rectangle 602" x="34" y="56" width="1" height="6"
+                                        fill="url(#paint6_linear_193_24)" />
+                                    <rect id="Rectangle 603" x="32" y="57" width="5" height="2"
+                                        fill="url(#paint7_linear_193_24)" />
+                                    <rect id="Rectangle 604" x="35" y="56" width="1" height="1"
+                                        fill="url(#paint8_linear_193_24)" />
+                                    <rect id="Rectangle 605" x="33" y="56" width="1" height="1"
+                                        fill="url(#paint9_linear_193_24)" />
+                                    <rect id="Rectangle 606" x="33" y="59" width="1" height="2"
+                                        fill="url(#paint10_linear_193_24)" />
+                                    <rect id="Rectangle 607" x="35" y="59" width="1" height="2"
+                                        fill="url(#paint11_linear_193_24)" />
+                                    <rect id="Rectangle 608" x="43" y="56" width="1" height="6"
+                                        fill="url(#paint12_linear_193_24)" />
+                                    <rect id="Rectangle 609" x="41" y="57" width="5" height="2"
+                                        fill="url(#paint13_linear_193_24)" />
+                                    <rect id="Rectangle 610" x="44" y="56" width="1" height="1"
+                                        fill="url(#paint14_linear_193_24)" />
+                                    <rect id="Rectangle 611" x="42" y="56" width="1" height="1"
+                                        fill="url(#paint15_linear_193_24)" />
+                                    <rect id="Rectangle 612" x="42" y="59" width="1" height="2"
+                                        fill="url(#paint16_linear_193_24)" />
+                                    <rect id="Rectangle 613" x="44" y="59" width="1" height="2"
+                                        fill="url(#paint17_linear_193_24)" />
+                                </g>
+                                <g id="Missiles">
+                                    <g id="MissileRight">
+                                        <rect id="Rectangle 516" x="59" y="6" width="1" height="2" fill="#BCBBBB" />
+                                        <rect id="Rectangle 517" x="60" y="8" width="1" height="3" fill="#BCBBBB" />
+                                        <rect id="Rectangle 518" x="58" y="8" width="1" height="3" fill="#BCBBBB" />
+                                        <rect id="Rectangle 519" x="61" y="11" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 520" x="57" y="11" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 521" x="62" y="15" width="1" height="2" fill="#BCBBBB" />
+                                        <rect id="Rectangle 522" x="56" y="15" width="1" height="2" fill="#BCBBBB" />
+                                        <rect id="Rectangle 523" x="63" y="17" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 524" x="55" y="17" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 525" x="56" y="21" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 526" x="57" y="22" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 527" x="58" y="23" width="3" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 528" x="61" y="22" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 529" x="62" y="21" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 530" x="59" y="8" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 531" x="60" y="11" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 532" x="58" y="11" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 533" x="61" y="15" width="1" height="2" fill="#DAD9D9" />
+                                        <rect id="Rectangle 534" x="57" y="15" width="1" height="2" fill="#DAD9D9" />
+                                        <rect id="Rectangle 535" x="62" y="17" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 536" x="56" y="17" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 537" x="58" y="22" width="3" height="1" fill="#DAD9D9" />
+                                        <rect id="Rectangle 538" x="57" y="21" width="1" height="1" fill="#DAD9D9" />
+                                        <rect id="Rectangle 539" x="61" y="21" width="1" height="1" fill="#DAD9D9" />
+                                        <rect id="Rectangle 541" x="60" y="15" width="1" height="2" fill="#FEF9F9" />
+                                        <rect id="Rectangle 542" x="58" y="15" width="1" height="2" fill="#FEF9F9" />
+                                        <rect id="Rectangle 543" x="57" y="17" width="1" height="4" fill="#FEF9F9" />
+                                        <rect id="Rectangle 544" x="61" y="17" width="1" height="4" fill="#FEF9F9" />
+                                        <rect id="Rectangle 545" x="58" y="21" width="2" height="1" fill="#FEF9F9" />
+                                        <rect id="Rectangle 547" x="59" y="14" width="1" height="6" fill="#ACAAAA" />
+                                        <rect id="Rectangle 548" x="60" y="21" width="1" height="1" fill="#FEF9F9" />
+                                        <rect id="Rectangle 550" x="58" y="17" width="1" height="4" fill="#CACACA" />
+                                        <rect id="Rectangle 551" x="60" y="17" width="1" height="4" fill="#CACACA" />
+                                        <rect id="Rectangle 552" x="59" y="12" width="1" height="2" fill="#FEF9F9" />
+                                        <rect id="Rectangle 553" x="59" y="20" width="1" height="1" fill="#CACACA" />
+                                    </g>
+                                    <g id="MissileLeft">
+                                        <rect id="Rectangle 516_2" x="9" y="6" width="1" height="2" fill="#BCBBBB" />
+                                        <rect id="Rectangle 517_2" x="10" y="8" width="1" height="3" fill="#BCBBBB" />
+                                        <rect id="Rectangle 518_2" x="8" y="8" width="1" height="3" fill="#BCBBBB" />
+                                        <rect id="Rectangle 519_2" x="11" y="11" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 520_2" x="7" y="11" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 521_2" x="12" y="15" width="1" height="2" fill="#BCBBBB" />
+                                        <rect id="Rectangle 522_2" x="6" y="15" width="1" height="2" fill="#BCBBBB" />
+                                        <rect id="Rectangle 523_2" x="13" y="17" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 524_2" x="5" y="17" width="1" height="4" fill="#BCBBBB" />
+                                        <rect id="Rectangle 525_2" x="6" y="21" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 526_2" x="7" y="22" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 527_2" x="8" y="23" width="3" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 528_2" x="11" y="22" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 529_2" x="12" y="21" width="1" height="1" fill="#BCBBBB" />
+                                        <rect id="Rectangle 530_2" x="9" y="8" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 531_2" x="10" y="11" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 532_2" x="8" y="11" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 533_2" x="11" y="15" width="1" height="2" fill="#DAD9D9" />
+                                        <rect id="Rectangle 534_2" x="7" y="15" width="1" height="2" fill="#DAD9D9" />
+                                        <rect id="Rectangle 535_2" x="12" y="17" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 536_2" x="6" y="17" width="1" height="4" fill="#DAD9D9" />
+                                        <rect id="Rectangle 537_2" x="8" y="22" width="3" height="1" fill="#DAD9D9" />
+                                        <rect id="Rectangle 538_2" x="7" y="21" width="1" height="1" fill="#DAD9D9" />
+                                        <rect id="Rectangle 539_2" x="11" y="21" width="1" height="1" fill="#DAD9D9" />
+                                        <rect id="Rectangle 541_2" x="10" y="15" width="1" height="2" fill="#FEF9F9" />
+                                        <rect id="Rectangle 542_2" x="8" y="15" width="1" height="2" fill="#FEF9F9" />
+                                        <rect id="Rectangle 543_2" x="7" y="17" width="1" height="4" fill="#FEF9F9" />
+                                        <rect id="Rectangle 544_2" x="11" y="17" width="1" height="4" fill="#FEF9F9" />
+                                        <rect id="Rectangle 545_2" x="8" y="21" width="2" height="1" fill="#FEF9F9" />
+                                        <rect id="Rectangle 547_2" x="9" y="14" width="1" height="6" fill="#ACAAAA" />
+                                        <rect id="Rectangle 548_2" x="10" y="21" width="1" height="1" fill="#FEF9F9" />
+                                        <rect id="Rectangle 550_2" x="8" y="17" width="1" height="4" fill="#CACACA" />
+                                        <rect id="Rectangle 551_2" x="10" y="17" width="1" height="4" fill="#CACACA" />
+                                        <rect id="Rectangle 552_2" x="9" y="12" width="1" height="2" fill="#FEF9F9" />
+                                        <rect id="Rectangle 553_2" x="9" y="20" width="1" height="1" fill="#CACACA" />
+                                    </g>
+                                </g>
+                                <g id="Body">
+                                    <path id="Union" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M35 0H34V1H32V2H31V3H30V4H29V5H28V7H27V9H26V11H25V13H24V16H23V19H22V21H21V23H20V24H19V25H18V26H17V27H16V28H15V29H14V30H13V31H12V32H11V33H10V34H9V35H8V36H7V37H6V38H5V39H4V40H3V42H2V44H1V46H0V54H1V55H2H4H5H6V54H9V53H14V52H16V51H21V50H27V49H42V50H48V51H53V52H55V53H60V54H63V55H65H67H68V54H69V51V46H68V44H67V43V42H66V40H65V39H64V38H63V37H62V36H61V35H60V34H59V33H58V32H57V31H56V30H55V29H54V28H53V27H52V26H51V25H50V24H49V23H48V21H47V19H46V16H45V13H44V11H43V9H42V7H41V5H40V4H39V3H38V2H37V1H35V0Z"
+                                        fill="url(#paint18_linear_193_24)" />
+                                    <rect id="Rectangle 614" x="33" y="6" width="1" height="3" fill="#333333" />
+                                    <rect id="Rectangle 615" x="35" y="6" width="1" height="3" fill="#333333" />
+                                    <rect id="Rectangle 616" x="36" y="6" width="2" height="3" fill="#333333" />
+                                    <rect id="Rectangle 617" x="37" y="7" width="1" height="3" fill="#333333" />
+                                    <rect id="Rectangle 618" x="38" y="7" width="1" height="3" fill="#333333" />
+                                    <rect id="Rectangle 619" x="31" y="6" width="2" height="3" fill="#333333" />
+                                    <rect id="Rectangle 620" x="31" y="7" width="1" height="3" fill="#333333" />
+                                    <rect id="Rectangle 621" x="30" y="7" width="1" height="3" fill="#333333" />
+                                </g>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_193_24" x1="25.5" y1="56" x2="25.5" y2="62"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_193_24" x1="25.5" y1="57" x2="25.5" y2="59"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_193_24" x1="26.5" y1="56" x2="26.5" y2="57"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_193_24" x1="24.5" y1="56" x2="24.5" y2="57"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_193_24" x1="24.5" y1="59" x2="24.5" y2="61"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_193_24" x1="26.5" y1="59" x2="26.5" y2="61"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint6_linear_193_24" x1="34.5" y1="56" x2="34.5" y2="62"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint7_linear_193_24" x1="34.5" y1="57" x2="34.5" y2="59"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint8_linear_193_24" x1="35.5" y1="56" x2="35.5" y2="57"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint9_linear_193_24" x1="33.5" y1="56" x2="33.5" y2="57"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint10_linear_193_24" x1="33.5" y1="59" x2="33.5" y2="61"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint11_linear_193_24" x1="35.5" y1="59" x2="35.5" y2="61"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint12_linear_193_24" x1="43.5" y1="56" x2="43.5" y2="62"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint13_linear_193_24" x1="43.5" y1="57" x2="43.5" y2="59"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint14_linear_193_24" x1="44.5" y1="56" x2="44.5" y2="57"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint15_linear_193_24" x1="42.5" y1="56" x2="42.5" y2="57"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint16_linear_193_24" x1="42.5" y1="59" x2="42.5" y2="61"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint17_linear_193_24" x1="44.5" y1="59" x2="44.5" y2="61"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BF5331" />
+                                    <stop offset="1" stop-color="#F5BD2C" stop-opacity="0.76" />
+                                </linearGradient>
+                                <linearGradient id="paint18_linear_193_24" x1="34.5" y1="0" x2="34.5" y2="54"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="#A6A6A6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
