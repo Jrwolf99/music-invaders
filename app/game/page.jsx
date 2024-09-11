@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import useGameEngine from '../util/useGameEngine';
+import Image from 'next/image';
 
 export default function AsteroidDestroyerGame() {
   const [bullets, setBullets] = useState([]);
@@ -10,15 +11,24 @@ export default function AsteroidDestroyerGame() {
   const [gameOver, setGameOver] = useState(false);
   const [typedWord, setTypedWord] = useState('');
 
+  const [angle, setAngle] = useState(0);
+
   const gameAreaWidth = 100;
   const gameAreaHeight = 100;
-  const bulletSpeed = 5;
-  const asteroidSpeed = 0.5;
-  const words = ['alpha', 'beta', 'gamma', 'delta', 'epsilon'];
+  const bulletSpeed = 3;
+  const asteroidSpeed = 0.3;
+  const words = ['alpha'];
   const [currentGameTime, setCurrentGameTime] = useState(0);
 
+  const inputRef = useRef(null);
   const bulletSoundRef = useRef(null);
   const explosionSoundRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus(); // Automatically focus the input on page load
+    }
+  }, []);
 
   const handleGameTick = () => {
     if (gameOver) return;
@@ -41,7 +51,7 @@ export default function AsteroidDestroyerGame() {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 1) {
-            return null; // Bullet reached the target
+            return null;
           }
 
           const moveX = (dx / distance) * bulletSpeed;
@@ -53,7 +63,7 @@ export default function AsteroidDestroyerGame() {
             y: bullet.y + moveY,
           };
         })
-        .filter((bullet) => bullet !== null) // Remove bullets that reached their target
+        .filter((bullet) => bullet !== null)
         .filter(
           (bullet) =>
             bullet.x >= 0 &&
@@ -67,8 +77,8 @@ export default function AsteroidDestroyerGame() {
   const updateAsteroids = () => {
     setAsteroids((prevAsteroids) => {
       const updatedAsteroids = prevAsteroids
-        .map((asteroid) => ({ ...asteroid, y: asteroid.y - asteroidSpeed })) // Asteroids move down (negative y direction)
-        .filter((asteroid) => asteroid.y >= 0); // Remove asteroids that have reached the bottom
+        .map((asteroid) => ({ ...asteroid, y: asteroid.y - asteroidSpeed }))
+        .filter((asteroid) => asteroid.y >= 0);
 
       if (updatedAsteroids.some((asteroid) => asteroid.y <= 10)) {
         setGameOver(true);
@@ -97,8 +107,7 @@ export default function AsteroidDestroyerGame() {
 
   const isCollision = (asteroid, bullet) => {
     return (
-      Math.abs(asteroid.x - bullet.x) < 5 && // Adjusted collision threshold for accuracy
-      Math.abs(asteroid.y - bullet.y) < 5
+      Math.abs(asteroid.x - bullet.x) < 5 && Math.abs(asteroid.y - bullet.y) < 5
     );
   };
 
@@ -110,14 +119,14 @@ export default function AsteroidDestroyerGame() {
 
   const spawnAsteroid = () => {
     const newAsteroid = {
-      x: Math.random() * gameAreaWidth,
-      y: gameAreaHeight, // Asteroids start from the top
+      x: Math.random() * 0.8 * gameAreaWidth + 0.1 * gameAreaWidth, // shift up 10% and reduce length 80%. keeps asteroid on screen
+      y: gameAreaHeight,
       word: words[Math.floor(Math.random() * words.length)],
     };
     setAsteroids((prevAsteroids) => [...prevAsteroids, newAsteroid]);
   };
 
-  useGameEngine(60, handleGameTick, () => {
+  useGameEngine(144, handleGameTick, () => {
     alert('Game Over');
   });
 
@@ -126,6 +135,27 @@ export default function AsteroidDestroyerGame() {
     setAsteroids([]);
     setScore(0);
     setGameOver(false);
+  };
+
+  const shootBullet = (matchedAsteroid) => {
+    const asteroidX = matchedAsteroid.x;
+    const asteroidY = matchedAsteroid.y;
+
+    setAngle((270 - Math.atan2(asteroidY - 0, asteroidX - 50) * 180) / Math.PI);
+
+    setBullets((prevBullets) => [
+      ...prevBullets,
+      {
+        x: 50,
+        y: 0,
+        targetX: asteroidX,
+        targetY: asteroidY,
+      },
+    ]);
+
+    bulletSoundRef.current.volume = 0.1;
+    bulletSoundRef.current.play();
+    setTypedWord('');
   };
 
   const handleInputChange = (e) => {
@@ -137,16 +167,7 @@ export default function AsteroidDestroyerGame() {
     );
 
     if (matchedAsteroid) {
-      const asteroidX = matchedAsteroid.x;
-      const asteroidY = matchedAsteroid.y;
-
-      setBullets((prevBullets) => [
-        ...prevBullets,
-        { x: 50, y: 0, targetX: asteroidX, targetY: asteroidY },
-      ]);
-
-      bulletSoundRef.current.play(); // Play bullet sound
-      setTypedWord('');
+      shootBullet(matchedAsteroid);
     }
   };
 
@@ -154,21 +175,21 @@ export default function AsteroidDestroyerGame() {
     <div className="flex flex-col items-center justify-between h-screen p-4 bg-gray-900 text-white relative">
       <h1 className="text-4xl text-red-700 font-bold mb-4">Music Invaders</h1>
       <p className="text-xl mb-4">Score: {score}</p>
-
-      <div className="relative w-full flex-grow bg-gray-800 overflow-hidden">
+      <div className="relative w-[90%] flex-grow bg-gray-800 overflow-hidden">
         {bullets.map((bullet, index) => (
-          <div
+          <Image
             key={index}
+            alt="Bullet"
+            src="/Assets/SVGs/bullet.svg"
             className="absolute"
+            width={30}
+            height={40}
             style={{
-              width: '20px',
-              height: '20px',
-              borderRadius: '50%',
               bottom: `${bullet.y}%`,
               left: `${bullet.x}%`,
-              backgroundColor: 'red',
+              transform: `rotate(${angle}deg)`,
             }}
-          ></div>
+          />
         ))}
 
         {asteroids.map((asteroid, index) => (
@@ -178,6 +199,7 @@ export default function AsteroidDestroyerGame() {
             style={{
               width: '30px',
               height: '30px',
+              zIndex: 2,
               bottom: `${asteroid.y}%`,
               left: `${asteroid.x}%`,
             }}
@@ -186,21 +208,20 @@ export default function AsteroidDestroyerGame() {
           </div>
         ))}
       </div>
-
       <img
         src="/Assets/images/Ship.png"
         alt="Player Ship"
-        className="w-10 h-10 mt-4"
+        className="w-10 h-10 mt-4 transition-transform duration-200"
+        style={{ transform: `rotate(${angle}deg)` }}
       />
-
       <input
+        ref={inputRef}
         type="text"
         value={typedWord}
         onChange={handleInputChange}
-        placeholder="Type the word to destroy the asteroid"
-        className="p-2 mt-4 bg-gray-800 text-white border border-gray-600 rounded"
+        placeholder="Type the note to destroy the invader"
+        className="p-2 mt-4 bg-gray-800 text-white border border-gray-600 rounded w-full"
       />
-
       {gameOver && (
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-70">
           <h2 className="text-4xl font-bold mb-4">Game Over</h2>
@@ -213,7 +234,6 @@ export default function AsteroidDestroyerGame() {
           </button>
         </div>
       )}
-
       <audio ref={bulletSoundRef} src="/Assets/sounds/Shot.mp3" />
       <audio ref={explosionSoundRef} src="/Assets/sounds/Explosion.mp3" />
     </div>
