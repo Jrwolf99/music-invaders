@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import useGameEngine from '../util/useGameEngine';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
 
 export default function AsteroidDestroyerGame() {
   const [bullets, setBullets] = useState([]);
@@ -28,40 +30,42 @@ export default function AsteroidDestroyerGame() {
   const gameAreaHeight = 100;
   const bulletSpeed = 3;
   const asteroidSpeed = 0.1 * difficulty;
-  const notes = [
-    'e2',
-    'f2',
-    'f#2',
-    'g2',
-    'a2',
-    'bb2',
-    'b2',
-    'c3',
-    'd3',
-    'e3',
-    'f3',
-    'f#3',
-    'g3',
-    'a3',
-    'b3',
-    'c4left',
-    'c4right',
-    'd4',
-    'e4',
-    'f4',
-    'f#4',
-    'g4',
-    'a4',
-    'bb4',
-    'b4',
-    'c5',
-    'd5',
-    'e5',
-    'f5',
-    'f#5',
-    'g5',
-    'a5',
-  ];
+  // const notes = [
+  //   'e2',
+  //   'f2',
+  //   'f#2',
+  //   'g2',
+  //   'a2',
+  //   'bb2',
+  //   'b2',
+  //   'c3',
+  //   'd3',
+  //   'e3',
+  //   'f3',
+  //   'f#3',
+  //   'g3',
+  //   'a3',
+  //   'b3',
+  //   'c4left',
+  //   'c4right',
+  //   'd4',
+  //   'e4',
+  //   'f4',
+  //   'f#4',
+  //   'g4',
+  //   'a4',
+  //   'bb4',
+  //   'b4',
+  //   'c5',
+  //   'd5',
+  //   'e5',
+  //   'f5',
+  //   'f#5',
+  //   'g5',
+  //   'a5',
+  // ];
+
+  const notes = ['fs2', 'fs3', 'fs4', 'fs5'];
 
   const [currentGameTime, setCurrentGameTime] = useState(0);
 
@@ -212,10 +216,10 @@ export default function AsteroidDestroyerGame() {
 
   const checkForMatch = (note) => {
     const parsedNote = note
-      .replace(/\./g, 'b')
-      .replace(/\//g, '#')
+      .replace(/#/g, 's')
+      .replace(/b/g, '.')
+      .replace(/\//g, 's')
       .toLowerCase();
-
     const matchedAsteroid = asteroids.find(
       (asteroid) => asteroid.note === parsedNote
     );
@@ -233,15 +237,33 @@ export default function AsteroidDestroyerGame() {
     }
   };
 
+  const notePic = (note) => {
+    return `/Assets/images/notes/${note}.png`;
+  };
+
   return (
-    <div className="flex flex-col items-center justify-between h-screen p-4 bg-gray-900 text-white relative">
-      <h1
-        style={{ fontFamily: 'Impact' }}
-        className="text-4xl text-red-700 font-bold mb-4"
-      >
-        Music Invaders
-      </h1>
-      <p className="text-xl mb-4">Score: {score}</p>
+    <div className="flex flex-col items-center justify-between h-screen bg-gray-900 text-white relative pb-2">
+      <div className="relative w-full flex items-start justify-center p-2">
+        <div className="flex flex-col items-center justify-center top-2 mx-auto">
+          <h1
+            className="text-red-700 font-bold"
+            style={{
+              fontFamily: 'Impact',
+              fontSize: '30px',
+            }}
+          >
+            Music Invaders
+          </h1>
+          <p className="text-lg">Score: {score}</p>
+        </div>
+
+        <Link href="/instructions" className="absolute top-2 right-2">
+          <span className="text-white hover:text-gray-400 cursor-pointer">
+            <InformationCircleIcon className="h-8 w-8" />
+          </span>
+        </Link>
+      </div>
+
       <div className="relative w-[90%] flex-grow bg-gray-800 overflow-hidden">
         {bullets.map((bullet, index) => (
           <Image
@@ -261,6 +283,7 @@ export default function AsteroidDestroyerGame() {
 
         {asteroids.map((asteroid, index) => (
           <>
+            {console.log(notePic(asteroid.note))}
             <Image
               key={index}
               height={100}
@@ -293,8 +316,8 @@ export default function AsteroidDestroyerGame() {
         value={typednote}
         onChange={handleInputChange}
         disabled={gameOver}
-        placeholder="Type the note to destroy the invader"
-        className="p-2 mt-4 bg-gray-800 text-white border border-gray-600 rounded w-full"
+        placeholder="Type the note to destroy the invader!"
+        className="p-2 mt-4 bg-gray-800 text-white border border-gray-600 rounded w-[95%] text-center"
       />
       {gameOver && (
         <div className="absolute z-[3] top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-70">

@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   const router = useRouter();
@@ -12,10 +14,17 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col justify-between bg-gray-900 text-white">
+      <div className="relative">
+        <Link href="/instructions" className="absolute top-5 right-5">
+          <span className="text-white hover:text-gray-400 cursor-pointer">
+            <InformationCircleIcon className="h-8 w-8" />
+          </span>
+        </Link>
+      </div>
       <div className="flex flex-col items-center justify-center min-h-[80vh] px-4 gap-4 text-center">
         <h1
-          className="font-bold mb-4 dark:text-red-700"
+          className="font-bold mb-4 text-red-700"
           style={{
             fontFamily: 'Impact',
             fontSize: '80px',
@@ -65,15 +74,15 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="flex flex-col items-center justify-center w-full h-[20vh] border-t gap-4 text-gray-700">
+      <footer className="flex flex-col items-center justify-center w-full h-[20vh] border-t gap-4 border-gray-800 text-sm text-gray-400">
         <p>© 2024 Jonathan Wolf</p>
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-400">
           App designed and made by{' '}
           <a
             href="https://jrwolf.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600"
+            className="text-blue-400 hover:underline"
           >
             Jonathan Wolf
           </a>
