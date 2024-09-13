@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <button
             onClick={startGame}
-            className="px-6 py-3 sm:px-8 sm:py-4 border-[2px] border-red-700 text-red-700 hover:bg-red-800 hover:text-white transition-all duration-300 rounded-lg text-xl sm:text-2xl"
+            className="px-6 py-3 sm:px-8 sm:py-4 border-[2px] border-red-600 text-red-500 hover:bg-red-700 hover:text-white transition-all duration-300 rounded-lg text-xl sm:text-2xl"
           >
             Start Game
           </button>
