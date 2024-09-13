@@ -30,42 +30,40 @@ export default function AsteroidDestroyerGame() {
   const gameAreaHeight = 100;
   const bulletSpeed = 3;
   const asteroidSpeed = 0.1 * difficulty;
-  // const notes = [
-  //   'e2',
-  //   'f2',
-  //   'f#2',
-  //   'g2',
-  //   'a2',
-  //   'bb2',
-  //   'b2',
-  //   'c3',
-  //   'd3',
-  //   'e3',
-  //   'f3',
-  //   'f#3',
-  //   'g3',
-  //   'a3',
-  //   'b3',
-  //   'c4left',
-  //   'c4right',
-  //   'd4',
-  //   'e4',
-  //   'f4',
-  //   'f#4',
-  //   'g4',
-  //   'a4',
-  //   'bb4',
-  //   'b4',
-  //   'c5',
-  //   'd5',
-  //   'e5',
-  //   'f5',
-  //   'f#5',
-  //   'g5',
-  //   'a5',
-  // ];
-
-  const notes = ['fs2', 'fs3', 'fs4', 'fs5'];
+  const notes = [
+    'e2',
+    'f2',
+    'f#2',
+    'g2',
+    'a2',
+    'bb2',
+    'b2',
+    'c3',
+    'd3',
+    'e3',
+    'f3',
+    'f#3',
+    'g3',
+    'a3',
+    'b3',
+    'c4left',
+    'c4right',
+    'd4',
+    'e4',
+    'f4',
+    'f#4',
+    'g4',
+    'a4',
+    'bb4',
+    'b4',
+    'c5',
+    'd5',
+    'e5',
+    'f5',
+    'f#5',
+    'g5',
+    'a5',
+  ];
 
   const [currentGameTime, setCurrentGameTime] = useState(0);
 
@@ -283,7 +281,6 @@ export default function AsteroidDestroyerGame() {
 
         {asteroids.map((asteroid, index) => (
           <>
-            {console.log(notePic(asteroid.note))}
             <Image
               key={index}
               height={100}
