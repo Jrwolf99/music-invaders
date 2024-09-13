@@ -235,7 +235,12 @@ export default function AsteroidDestroyerGame() {
 
   return (
     <div className="flex flex-col items-center justify-between h-screen p-4 bg-gray-900 text-white relative">
-      <h1 className="text-4xl text-red-700 font-bold mb-4">Music Invaders</h1>
+      <h1
+        style={{ fontFamily: 'Impact' }}
+        className="text-4xl text-red-700 font-bold mb-4"
+      >
+        Music Invaders
+      </h1>
       <p className="text-xl mb-4">Score: {score}</p>
       <div className="relative w-[90%] flex-grow bg-gray-800 overflow-hidden">
         {bullets.map((bullet, index) => (
@@ -274,10 +279,12 @@ export default function AsteroidDestroyerGame() {
           </>
         ))}
       </div>
-      <img
+      <Image
+        height={65}
+        width={65}
         src="/Assets/images/Ship.png"
         alt="Player Ship"
-        className="w-[65px] h-[65px] mt-4 transition-transform duration-200"
+        className="mt-4 transition-transform duration-200"
         style={{ transform: `rotate(${angle}deg)` }}
       />
       <input
