@@ -215,7 +215,6 @@ export default function AsteroidDestroyerGame() {
   const checkForMatch = (note) => {
     const parsedNote = note
       .replace(/#/g, 's')
-      .replace(/b/g, '.')
       .replace(/\//g, 's')
       .toLowerCase();
     const matchedAsteroid = asteroids.find(
