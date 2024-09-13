@@ -35,9 +35,7 @@ export default function Instruction() {
               </li>
               <li>
                 You can also substitute <span className="font-bold">/</span> for{' '}
-                <span className="font-bold">♯</span> and{' '}
-                <span className="font-bold">.</span> for{' '}
-                <span className="font-bold">♭</span>.
+                <span className="font-bold">♯</span>.
               </li>
             </ul>
           </div>
