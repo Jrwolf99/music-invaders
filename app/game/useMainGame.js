@@ -253,7 +253,6 @@ export default function useMainGame() {
   };
 
   const handleInputSubmit = (note) => {
-    console.log('Checking for match');
     const matchedAsteroid = checkForMatch(note);
     if (matchedAsteroid) {
       shootBullet(matchedAsteroid);
@@ -263,8 +262,6 @@ export default function useMainGame() {
   };
 
   useEffect(() => {
-    console.log(typednote);
-    console.log(/\d/.test(typednote));
     if (/\d/.test(typednote)) {
       handleInputSubmit(typednote);
     }

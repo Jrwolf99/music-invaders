@@ -1,5 +1,6 @@
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Controls({
   typednote,
@@ -15,14 +16,37 @@ export default function Controls({
   const modifiers = ['♭', '♯'];
   const octaves = ['1', '2', '3', '4', '5', '6'];
 
-  const buttonClasses =
-    'bg-gray-800 text-white rounded hover:bg-gray-700 p-2 text-xs sm:text-lg w-9 h-9 sm:w-10 sm:h-10';
+  const [activeLetters, setActiveLetters] = useState([]);
+
+  useEffect(() => {
+    if (typednote.length === 0) {
+      setTimeout(() => {
+        setActiveLetters([]);
+      }, 1000);
+    } else
+      setActiveLetters(typednote.split('').map((char) => visualNote(char)));
+  }, [typednote]);
+
+  const isInActiveLetters = (letter) => {
+    console.log('letter', letter);
+    console.log('activeLetters', activeLetters);
+    return activeLetters.includes(visualNote(letter));
+  };
+
+  const buttonClasses = (letter) =>
+    ` ${isInActiveLetters(letter) ? 'bg-gray-700' : 'bg-gray-800'}
+     text-white rounded p-2 text-xs sm:text-lg w-9 h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16`;
 
   return (
-    <div className="flex flex-col items-center sm:mt-4 w-full">
+    <div className="flex flex-col items-center sm:mt-4 w-full relative">
+      {message && (
+        <p className="text-center text-sm sm:text-lg rounded py-4 bg-gray-700 w-full sm:w-[90%] rounded absolute z-[1000px] bottom-[140px] sm:bottom-[200px]">
+          {message}
+        </p>
+      )}
       <button
         onClick={() => setTypednote('')}
-        className="w-[90%] my-4 p-2 rounded bg-gray-800 rounded hover:bg-gray-700"
+        className="w-[365px] sm:w-[675px] md:w-[740px] lg:w-[800px] my-4 p-2 rounded bg-gray-800 rounded hover:bg-gray-700"
       >
         <XMarkIcon className="h-4 w-full sm:h-6 text-red-500 text-xs sm:text-lg" />
       </button>
@@ -36,7 +60,7 @@ export default function Controls({
                   setTypednote((prevNote) => prevNote + letter);
                 }
               }}
-              className={buttonClasses}
+              className={buttonClasses(letter)}
             >
               {letter.toUpperCase()}
             </button>
@@ -82,6 +106,8 @@ export default function Controls({
           </form>
         </div>
 
+        {console.log('typednote', typednote)}
+
         <div className="grid grid-row-2 grid-cols-4 gap-1">
           {modifiers.map((modifier) => (
             <button
@@ -91,7 +117,7 @@ export default function Controls({
                   setTypednote((prevNote) => prevNote + modifier);
                 }
               }}
-              className={buttonClasses}
+              className={buttonClasses(modifier)}
             >
               {modifier}
             </button>
@@ -104,7 +130,7 @@ export default function Controls({
                   setTypednote((prevNote) => prevNote + octave);
                 }
               }}
-              className={buttonClasses}
+              className={buttonClasses(octave)}
             >
               {octave}
             </button>
